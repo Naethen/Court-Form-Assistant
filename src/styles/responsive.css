@@ -1,0 +1,59 @@
+/* Base styles */
+.form-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsive breakpoints */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 15px;
+  }
+  
+  .form-field {
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 8px;
+  }
+  
+  .form-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .form-container {
+    padding: 10px;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+  }
+  
+  .form-button {
+    width: 100%;
+    margin: 5px 0;
+  }
+}
+
+/* Animation classes */
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit-active {
+  opacity: 0;
+  transition: opacity 300ms ease-in;
+}
